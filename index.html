@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery thumb_slider plugin</title>
+	<!-- css -->
+	<link type="text/css" media="all" href="css/main.css" rel="stylesheet" />
+	<link type="text/css" media="all" href="css/thumb_slider.css" rel="stylesheet" />
+
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/thumb_slider.js"></script>
 </head>
+
 <body>
-    
+	<nav>
+		<a href="index.html">Thumb slider</a>
+		<a href="Rahul Chaudhari.html">Accordion</a>
+		<a href="divyaraj.html"></a>
+		<a href="index.html"></a>
+		<a href="index.html"></a>
+	</nav>
+	<div class="container">
+		<div class="whitebox">
+			<h1>Thumb slider plugin - CARS</h1>
+
+			<hr />
+			<div id="my_thumb_slider">
+				<div class="slides">
+					<div class="slide active">
+						<img src="../images/car1.jpg" alt="" width="400" height="300" />
+					</div>
+					<div class="slide">
+						<img src="../images/car2.jpg" alt="" width="400" height="300" />
+					</div>
+					<div class="slide">
+						<img src="../images/car3.jpg" alt=""  width="400" height="300"/>
+					</div>
+					<div class="slide">
+						<img src="../images/car4.jpg" alt="" width="400" height="300" />
+					</div>
+				</div>
+				<div class="controls">
+					<span class="control active">
+						<img src="../images/car1.jpg" alt=""  width="100" height="100"/>
+					</span>
+					<span class="control">
+						<img src="../images/car2.jpg" alt="" width="100" height="100"/>
+					</span>
+					<span class="control">
+						<img src="../images/car3.jpg" alt="" width="100" height="100"/>
+					</span>
+					<span class="control">
+						<img src="../images/car4.jpg" alt="" width="100" height="100" />
+					</span>
+				</div>
+			</div>
+			<script type="text/javascript">
+				/* define $ as jQuery just in case */
+				(function($) {
+					/* doc ready */
+					$(function() {
+						/* init the plugin */
+						$('#my_thumb_slider').thumb_slider();
+					});
+				})(jQuery);
+
+			</script>
+			<hr />
+		</div>
+	</div>
+
 </body>
+
 </html>
